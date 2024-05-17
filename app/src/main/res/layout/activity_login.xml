@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        android:textColor="@color/secundary"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sesion"
+        android:textColor="@color/principal"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logofin"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo Electrónico"
+        android:textColor="@color/principal"
+        android:fontFamily="sans-serif-medium"
+
+        android:backgroundTint="@color/complement"
+        android:inputType="textEmailAddress"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/principal"
+
+
+        android:backgroundTint="@color/complement"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/login1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+
+
+        android:textColor="@color/complement"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/round_button_background" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="¿Aún no tienes una cuenta?"/>
+
+        <Button
+            android:id="@+id/registrarse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regístrate"
+            android:background="@color/paynes_gray"
+            android:textColor="@color/complement"
+            android:layout_marginStart="2dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

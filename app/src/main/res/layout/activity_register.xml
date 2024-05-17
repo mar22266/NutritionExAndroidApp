@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:textColor="@color/principal"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logofin"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"/>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:textColor="@color/principal"
+                android:fontFamily="sans-serif-medium"
+                android:layout_height="wrap_content"
+                android:hint="Nombre" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:textColor="@color/principal"
+            android:fontFamily="sans-serif-medium"
+            android:layout_height="wrap_content"
+                android:hint="Correo Electrónico" />
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:textColor="@color/principal"
+            android:fontFamily="sans-serif-medium"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña" />
+
+    <Button
+        android:id="@+id/registro1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/round_button_background"
+        android:textColor="@color/complement"
+        android:text="Registrarse" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/principal"
+            android:text="¿Ya tienes una cuenta?"/>
+
+        <Button
+            android:id="@+id/loger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicia Sesión"
+
+            android:background="@color/paynes_gray"
+            android:textColor="@color/complement"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+</LinearLayout>
